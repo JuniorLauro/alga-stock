@@ -3,14 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import TestComponent from '../TestComponent';
 import ClassComponent from '../ClassComponent';
+import CountComponent from '../CountComponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TestComponent/>
-        <ClassComponent/>
+        <CountComponent/>
         <a
           className="App-link"
           href="https://reactjs.org"
