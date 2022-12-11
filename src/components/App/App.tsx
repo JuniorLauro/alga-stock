@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TestComponent/>
+        <TestComponent name='Lauro'/>
         <ClassComponent/>
         <a
           className="App-link"
