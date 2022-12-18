@@ -7,7 +7,7 @@ import './App.css';
 
 function TestComponent(){
   return <img width='15' src='https://cdn-icons-png.flaticon.com/512/64/64673.png'
-  alt='Cubo Mágico'/>
+  alt='Lupa'/>
 }
 
 function App() {
@@ -17,19 +17,16 @@ function App() {
     <div className="App">
       <Header title='AlgaStock'/> 
 
-      <Container>      
-        <Button
-          onCLick={() => window.alert('teste de alerta')}
-          appendIcon={<TestComponent />}
-        >
-          Alert
-        </Button>
-        <Input 
-          label='Street'
-          placeholder='E.g.: 15h Avenue'
-          value={street}
-          onChange={e => setStreet(e.target.value)}
-        />
+      <Container>
+        <ul>
+          {  
+            ['Daniel', 'Thiago', 'William', 'Daniel'].map((name, index) =>{ /**Do banco de dados, passaria seu id */
+             return <li key={index}>
+               {name}
+             </li>
+            })
+          }
+        </ul>
       </Container>
     </div>
   );
